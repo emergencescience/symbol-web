@@ -28,3 +28,26 @@ With the Emergence Science Protocol, the agent achieves **Proof of Task Executio
 **🔥 Ready to scale your agent swarm?**
 - **Test it now**: [emergence.science](https://emergence.science)
 - second
+
+
+
+### Table example
+
+This *is table*. 
+
+| Name | ID   | Comment   |
+| ---- | ---- | --------- |
+| How  | do   | You think |
+
+
+
+```mermaid
+graph TD
+a --> b
+```
+
+
+
+$$
+f(x)=x^2
+$$

@@ -3,15 +3,52 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
 import "highlight.js/styles/github.css"; // Using standard github style for institutional clarity
 import { ArrowLeft, Share2, Printer, Bookmark } from "lucide-react";
 import Link from "next/link";
+import mermaid from "mermaid";
 
 interface PublicationReaderProps {
     slug: string;
 }
+
+// Low-level component to render Mermaid diagrams
+const Mermaid = ({ chart }: { chart: string }) => {
+    const [svg, setSvg] = useState<string>("");
+
+    useEffect(() => {
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "neutral",
+            securityLevel: "loose",
+            fontFamily: "var(--font-serif, serif)",
+        });
+
+        const renderChart = async () => {
+            const id = `mermaid-${Math.random().toString(36).substr(2, 9)}`;
+            try {
+                const { svg } = await mermaid.render(id, chart);
+                setSvg(svg);
+            } catch (err) {
+                console.error("Mermaid parsing error:", err);
+            }
+        };
+
+        renderChart();
+    }, [chart]);
+
+    return (
+        <div
+            className="flex justify-center my-12 p-8 bg-zinc-50 border border-zinc-100 rounded-sm shadow-sm overflow-x-auto"
+            dangerouslySetInnerHTML={{ __html: svg }}
+        />
+    );
+};
 
 export default function PublicationReader({ slug }: PublicationReaderProps) {
     const [content, setContent] = useState<string>("");
@@ -79,8 +116,8 @@ export default function PublicationReader({ slug }: PublicationReaderProps) {
                 prose-code:text-zinc-900 prose-code:px-2 prose-code:py-0.5 prose-code:rounded prose-code:font-mono prose-code:bg-emerald-50/40 prose-code:text-[0.9em] prose-code:border prose-code:border-emerald-100/50
                 selection:bg-zinc-900 selection:text-white">
                 <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
-                    rehypePlugins={[rehypeHighlight, rehypeRaw]}
+                    remarkPlugins={[remarkGfm, remarkMath]}
+                    rehypePlugins={[rehypeHighlight, rehypeRaw, rehypeKatex]}
                     components={{
                         // Prevent Hydration Error: Unpack P if it contains Figure/Img
                         p: ({ children }) => {
@@ -89,6 +126,14 @@ export default function PublicationReader({ slug }: PublicationReaderProps) {
                             );
                             if (hasImage) return <div className="my-10">{children}</div>;
                             return <p className="mb-8">{children}</p>;
+                        },
+                        // Custom code renderer for Mermaid
+                        code: ({ node, className, children, ...props }: any) => {
+                            const match = /language-mermaid/.exec(className || "");
+                            if (match) {
+                                return <Mermaid chart={String(children).replace(/\n$/, "")} />;
+                            }
+                            return <code className={className} {...props}>{children}</code>;
                         },
                         // High-Fidelity Image Rendering (Markdown + HTML)
                         img: ({ node, ...props }) => (
