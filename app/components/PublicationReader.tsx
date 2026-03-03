@@ -57,12 +57,21 @@ export default function PublicationReader({ slug }: PublicationReaderProps) {
     useEffect(() => {
         async function loadContent() {
             try {
-                const res = await fetch(`/content/${slug}.md`);
+                const res = await fetch(`/content/archive/${slug}.md`);
                 if (!res.ok) throw new Error("Publication not found");
                 let text = await res.text();
 
-                // Rewrite relative image paths to work in the web app
-                // From ../resources/ to /content/resources/
+                // Rewrite relative image paths relative to the folder the slug is in
+                // Blog slug: "blog/2026-..." -> Resources: "/content/archive/blog/resources/"
+                const slugParts = slug.split('/');
+                const folder = slugParts.length > 1 ? slugParts.slice(0, -1).join('/') : '';
+                const baseResourcePath = `/content/archive/${folder ? folder + '/' : ''}resources/`;
+
+                text = text.replace(/src="\.\/resources\//g, `src="${baseResourcePath}`);
+                text = text.replace(/src='\.\/resources\//g, `src='${baseResourcePath}`);
+                text = text.replace(/\(\.\/resources\//g, `(${baseResourcePath}`);
+
+                // Keep backward compatibility for ../resources/
                 text = text.replace(/src="\.\.\/resources\//g, 'src="/content/resources/');
                 text = text.replace(/src='\.\.\/resources\//g, "src='/content/resources/");
                 text = text.replace(/\(\.\.\/resources\//g, '(/content/resources/');
