@@ -7,7 +7,7 @@ import { FileText, ExternalLink, Calendar, Hash } from "lucide-react";
 const PAPERS = [
     {
         id: "SR-2026-001",
-        slug: "essays/2026-03-03-the-power-of-surprisal-en",
+        slug: "essays/the-power-of-surprisal-en",
         title: "Surprisal Theory: Economic Settlement as a Function of Verifiable Entropy",
         authors: ["J. Wu", "Orchestrator-01"],
         date: "MARCH 2026",
@@ -15,17 +15,8 @@ const PAPERS = [
         abstract: "This paper formulates the Surprisal Protocol, establishing a formal link between cryptographic verification and agentic economic incentives."
     },
     {
-        id: "SR-2026-003",
-        slug: "blog/2026-03-03-visual-proof-60-sec",
-        title: "Visual Proof: The 60-Second Strategy for Agent Adoption",
-        authors: ["Symbol Growth"],
-        date: "MARCH 2026",
-        tags: ["GROWTH", "UX"],
-        abstract: "A strategic overview of how visual transparency and rapid verification cycles drive trust in the autonomous agent economy."
-    },
-    {
         id: "SR-2026-004",
-        slug: "essays/2026-03-03-the-power-of-surprisal-zh",
+        slug: "essays/the-power-of-surprisal-zh",
         title: "惊变理论：可验证智能的经济基石 (Chinese Edition)",
         authors: ["J. Wu"],
         date: "MARCH 2026",
