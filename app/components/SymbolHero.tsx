@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 
-export default function SymbolHero() {
+export default function SymbolHero({ dict }: { dict: any }) {
     const [grid, setGrid] = useState<number[][]>([]);
     const rows = 30;
     const cols = 50;
@@ -69,10 +69,10 @@ export default function SymbolHero() {
                     </div>
                     <div className="space-y-2">
                         <h1 className="text-4xl font-serif tracking-tight text-zinc-900 italic">
-                            Symbol Science
+                            {dict.title}
                         </h1>
-                        <p className="text-xs font-mono uppercase tracking-[0.4em] text-zinc-400">
-                            Formal Logic & Emergent Intelligence
+                        <p className="text-xs font-mono uppercase tracking-[0.4em] text-zinc-400 max-w-lg mx-auto">
+                            {dict.subtitle}
                         </p>
                     </div>
                 </div>

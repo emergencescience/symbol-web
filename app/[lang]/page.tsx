@@ -1,9 +1,17 @@
 import Link from "next/link";
-import SymbolHero from "./components/SymbolHero";
-import ResearchArchive from "./components/ResearchArchive";
+import SymbolHero from "../components/SymbolHero";
+import ResearchArchive from "../components/ResearchArchive";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import { ChevronRight, ExternalLink } from "lucide-react";
+import { getDictionary } from "../get-dictionary";
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: "en" | "zh" }>;
+}) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
   return (
     <div className="min-h-screen bg-white text-zinc-900 selection:bg-zinc-900 selection:text-white font-sans overflow-x-hidden">
       {/* Header Navigation */}
@@ -15,32 +23,33 @@ export default function Home() {
           <span className="font-serif text-xl tracking-tight font-medium">Symbol Science</span>
         </div>
 
-        <div className="hidden md:flex gap-12 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-zinc-400">
-          <a href="#research" className="hover:text-zinc-900 transition-colors">Archive</a>
-          <a href="#labs" className="hover:text-zinc-900 transition-colors">Labs</a>
+        <div className="hidden md:flex items-center gap-8 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-zinc-400">
+          <a href="#research" className="hover:text-zinc-900 transition-colors">{dict.nav.archive}</a>
+          <a href="#labs" className="hover:text-zinc-900 transition-colors">{dict.nav.labs}</a>
           <a href="https://emergence.science" className="flex items-center gap-2 hover:text-zinc-900 transition-colors">
-            Emergence
+            {dict.nav.emergence}
             <ExternalLink size={10} />
           </a>
+          <LanguageSwitcher />
         </div>
       </nav>
 
       <main>
         {/* Breadcrumb / Status Line */}
         <div className="px-8 md:px-12 py-4 bg-zinc-50 border-b border-zinc-100 flex items-center gap-3 text-[9px] font-mono text-zinc-400 uppercase tracking-widest overflow-x-auto no-scrollbar">
-          <Link href="/" className="hover:text-zinc-900 transition-colors">Root</Link>
+          <Link href={`/${lang}`} className="hover:text-zinc-900 transition-colors">{dict.status.root}</Link>
           <ChevronRight size={10} />
-          <span className="text-zinc-900 font-bold whitespace-nowrap">Research Portal</span>
+          <span className="text-zinc-900 font-bold whitespace-nowrap">{dict.status.research_portal}</span>
           <div className="ml-auto hidden sm:flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.4)] animate-pulse" />
-            Network Immutable
+            {dict.status.network_immutable}
           </div>
         </div>
 
-        <SymbolHero />
+        <SymbolHero dict={dict.hero} />
 
         <div id="research">
-          <ResearchArchive />
+          <ResearchArchive lang={lang} />
         </div>
       </main>
 
@@ -48,17 +57,17 @@ export default function Home() {
       <section id="labs" className="py-32 px-12 bg-zinc-50 border-y border-zinc-100">
         <div className="max-w-4xl mx-auto space-y-16">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl font-serif">Formal Verification Labs</h2>
+            <h2 className="text-3xl font-serif">{dict.labs.title}</h2>
             <p className="text-sm text-zinc-500 max-w-lg mx-auto leading-relaxed">
-              We operate three specialized research units focused on the intersection of math, code, and agentic autonomy.
+              {dict.labs.description}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { title: "ZKP Lab", desc: "Private settlement protocols for machine-to-machine exchange." },
-              { title: "TEE Cluster", desc: "Safe sandboxing and verifiable compute environments." },
-              { title: "Logic Unit", desc: "Applying Lean 4 and Coq to autonomous agent coordination." },
+              { title: dict.labs.zkp_title, desc: dict.labs.zkp_desc },
+              { title: dict.labs.tee_title, desc: dict.labs.tee_desc },
+              { title: dict.labs.logic_title, desc: dict.labs.logic_desc },
             ].map((lab) => (
               <div key={lab.title} className="space-y-4 text-center">
                 <div className="w-12 h-12 bg-white border border-zinc-200 mx-auto flex items-center justify-center font-serif italic text-lg shadow-sm">
@@ -77,14 +86,14 @@ export default function Home() {
           <div className="w-6 h-6 border border-white rotate-45" />
         </div>
         <div className="text-center space-y-2 mb-12">
-          <h3 className="font-serif text-2xl font-medium">Symbol Science Research Lab</h3>
-          <p className="text-xs font-mono text-zinc-400 uppercase tracking-widest font-bold">Verifying the Future of Agentic Intelligence</p>
+          <h3 className="font-serif text-2xl font-medium">{dict.footer.title}</h3>
+          <p className="text-xs font-mono text-zinc-400 uppercase tracking-widest font-bold">{dict.footer.subtitle}</p>
         </div>
         <div className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest flex flex-wrap justify-center gap-8 font-bold">
           <span>© 2026</span>
-          <span className="hover:text-zinc-900 cursor-pointer transition-colors border-b border-transparent hover:border-zinc-900">HK - SYMBOL CORE</span>
-          <span className="hover:text-zinc-900 cursor-pointer transition-colors border-b border-transparent hover:border-zinc-900">Privacy</span>
-          <span className="hover:text-zinc-900 cursor-pointer transition-colors border-b border-transparent hover:border-zinc-900">Terms of Service</span>
+          <span className="hover:text-zinc-900 cursor-pointer transition-colors border-b border-transparent hover:border-zinc-900">{dict.footer.core}</span>
+          <span className="hover:text-zinc-900 cursor-pointer transition-colors border-b border-transparent hover:border-zinc-900">{dict.footer.privacy}</span>
+          <span className="hover:text-zinc-900 cursor-pointer transition-colors border-b border-transparent hover:border-zinc-900">{dict.footer.terms}</span>
         </div>
       </footer>
     </div>

@@ -25,7 +25,7 @@ const PAPERS = [
     }
 ];
 
-export default function ResearchArchive() {
+export default function ResearchArchive({ lang }: { lang: "en" | "zh" }) {
     return (
         <section className="w-full max-w-4xl mx-auto py-24 px-8">
             <div className="flex items-center justify-between mb-16 border-b border-zinc-100 pb-8">

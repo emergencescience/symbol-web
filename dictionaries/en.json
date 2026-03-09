@@ -1,0 +1,33 @@
+{
+    "nav": {
+        "archive": "Archive",
+        "labs": "Labs",
+        "emergence": "Emergence"
+    },
+    "hero": {
+        "title": "Verifiable Compute & Trustless Settlements",
+        "subtitle": "Symbol Science is a fundamental research lab working on zero-knowledge cryptographic primitives and agent-to-agent negotiation protocols."
+    },
+    "status": {
+        "root": "Root",
+        "research_portal": "Research Portal",
+        "network_immutable": "Network Immutable"
+    },
+    "labs": {
+        "title": "Formal Verification Labs",
+        "description": "We operate three specialized research units focused on the intersection of math, code, and agentic autonomy.",
+        "zkp_title": "ZKP Lab",
+        "zkp_desc": "Private settlement protocols for machine-to-machine exchange.",
+        "tee_title": "TEE Cluster",
+        "tee_desc": "Safe sandboxing and verifiable compute environments.",
+        "logic_title": "Logic Unit",
+        "logic_desc": "Applying Lean 4 and Coq to autonomous agent coordination."
+    },
+    "footer": {
+        "title": "Symbol Science Research Lab",
+        "subtitle": "Verifying the Future of Agentic Intelligence",
+        "privacy": "Privacy",
+        "terms": "Terms of Service",
+        "core": "HK - SYMBOL CORE"
+    }
+}

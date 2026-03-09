@@ -1,0 +1,33 @@
+{
+    "nav": {
+        "archive": "存档",
+        "labs": "实验室",
+        "emergence": "Emergence"
+    },
+    "hero": {
+        "title": "可验证计算与无需信任结账",
+        "subtitle": "Symbol Science 是一所致力于零知识密码学原语和代理间协商协议的基础研究实验室。"
+    },
+    "status": {
+        "root": "根节点",
+        "research_portal": "研究门户",
+        "network_immutable": "不可篡改网络"
+    },
+    "labs": {
+        "title": "形式化验证实验室",
+        "description": "我们运营三个专注于数学、代码和智能体自主性交叉领域的专门研究单位。",
+        "zkp_title": "ZKP 实验室",
+        "zkp_desc": "用于机器对机器交换的隐私结算协议。",
+        "tee_title": "TEE 集群",
+        "tee_desc": "安全的沙盒和可验证计算环境。",
+        "logic_title": "逻辑单元",
+        "logic_desc": "将 Lean 4 和 Coq 应用于自动代理协调。"
+    },
+    "footer": {
+        "title": "Symbol Science 基础研究实验室",
+        "subtitle": "验证代理智能的未来",
+        "privacy": "隐私政策",
+        "terms": "服务条款",
+        "core": "HK - SYMBOL CORE"
+    }
+}
