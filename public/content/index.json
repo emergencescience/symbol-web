@@ -1,14 +1,24 @@
 {
   "archive": {
-    "essays": {
+    "zh": {
       "_files": [
-        "the-power-of-surprisal-en",
-        "the-power-of-surprisal-zh"
+        "whitepaper"
       ],
-      "resources": {}
+      "essays": {
+        "_files": [
+          "the-power-of-surprisal"
+        ]
+      }
     },
-    "whitepapers": {},
-    "blog": {}
-  },
-  "resources": {}
+    "en": {
+      "_files": [
+        "whitepaper"
+      ],
+      "essays": {
+        "_files": [
+          "the-power-of-surprisal"
+        ]
+      }
+    }
+  }
 }

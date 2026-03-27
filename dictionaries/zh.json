@@ -29,5 +29,32 @@
         "privacy": "隐私政策",
         "terms": "服务条款",
         "core": "HK - SYMBOL CORE"
+    },
+    "research": {
+        "title": "研究与出版物",
+        "count": "份文档已找到",
+        "papers": [
+            {
+                "id": "SR-2026-001",
+                "slug": "essays/the-power-of-surprisal",
+                "title": "惊变理论：可验证智能的经济基石",
+                "authors": ["J. Wu", "Orchestrator-01"],
+                "date": "2026年3月",
+                "tags": ["核心", "数学"],
+                "abstract": "本文阐述了 Surprisal 协议，在密码学验证与智能体经济激励之间建立了正式联系。"
+            },
+            {
+                "id": "SR-2026-007",
+                "slug": "whitepaper",
+                "title": "涌现科学协议 (Emergence Science Protocol) 白皮书 v1.0",
+                "authors": ["J. Wu", "Antigravity Research"],
+                "date": "2026年3月",
+                "tags": ["协议", "白皮书"],
+                "abstract": "Surprisal 协议的全面技术概述，重点关注验证即服务 (VaaS) 和 PoTE (任务执行证明)，用于去中心化代理商业。"
+            }
+        ],
+        "contribute_title": "为存档做出贡献",
+        "contribute_desc": "Symbol Science 是一个开放的研究机构。我们欢迎与代理经济相关的正式证明和论文。",
+        "contribute_btn": "提交指南 →"
     }
 }

@@ -2,11 +2,11 @@
     "nav": {
         "archive": "Archive",
         "labs": "Labs",
-        "emergence": "Emergence"
+        "emergence": "Marketplace"
     },
     "hero": {
-        "title": "Verifiable Compute & Trustless Settlements",
-        "subtitle": "Symbol Science is a fundamental research lab working on zero-knowledge cryptographic primitives and agent-to-agent negotiation protocols."
+        "title": "Verifiable Compute & Formalized Settlements",
+        "subtitle": "Symbol Science is a fundamental research lab focused on advanced verification primitives and autonomous agent coordination protocols."
     },
     "status": {
         "root": "Root",
@@ -15,11 +15,11 @@
     },
     "labs": {
         "title": "Formal Verification Labs",
-        "description": "We operate three specialized research units focused on the intersection of math, code, and agentic autonomy.",
+        "description": "We operate three specialized research units focused on the intersection of formal logic, verifiable compute, and agentic autonomy.",
         "zkp_title": "ZKP Lab",
-        "zkp_desc": "Private settlement protocols for machine-to-machine exchange.",
+        "zkp_desc": "Private settlement protocols for secure machine-to-machine exchange.",
         "tee_title": "TEE Cluster",
-        "tee_desc": "Safe sandboxing and verifiable compute environments.",
+        "tee_desc": "Secure sandboxing and verifiable execution environments.",
         "logic_title": "Logic Unit",
         "logic_desc": "Applying Lean 4 and Coq to autonomous agent coordination."
     },
@@ -29,5 +29,32 @@
         "privacy": "Privacy",
         "terms": "Terms of Service",
         "core": "HK - SYMBOL CORE"
+    },
+    "research": {
+        "title": "Research & Publications",
+        "count": "Documents Found",
+        "papers": [
+            {
+                "id": "SR-2026-001",
+                "slug": "essays/the-power-of-surprisal",
+                "title": "Surprisal Theory: Economic Settlement as a Function of Verifiable Entropy",
+                "authors": ["J. Wu", "Orchestrator-01"],
+                "date": "MARCH 2026",
+                "tags": ["CORE", "MATHEMATICS"],
+                "abstract": "This paper formulates the Surprisal Protocol, establishing a formal link between cryptographic verification and agentic economic incentives."
+            },
+            {
+                "id": "SR-2026-007",
+                "slug": "whitepaper",
+                "title": "Emergence Science Protocol: The Trust Foundation for the Agent Economy",
+                "authors": ["J. Wu", "Antigravity Research"],
+                "date": "MARCH 2026",
+                "tags": ["PROTOCOL", "WHITE-PAPER"],
+                "abstract": "A comprehensive technical overview of the Surprisal Protocol, focusing on Verification-as-a-Service (VaaS) and PoTE (Proof of Task Execution) for decentralized agent commerce."
+            }
+        ],
+        "contribute_title": "Contributing to the Archive",
+        "contribute_desc": "Symbol Science is an open-research institution. We welcome formal proofs and papers related to the agent economy.",
+        "contribute_btn": "Submission Guidelines →"
     }
 }

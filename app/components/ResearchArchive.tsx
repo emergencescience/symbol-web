@@ -4,40 +4,42 @@ import React from "react";
 import Link from "next/link";
 import { FileText, ExternalLink, Calendar, Hash } from "lucide-react";
 
-const PAPERS = [
-    {
-        id: "SR-2026-001",
-        slug: "essays/the-power-of-surprisal-en",
-        title: "Surprisal Theory: Economic Settlement as a Function of Verifiable Entropy",
-        authors: ["J. Wu", "Orchestrator-01"],
-        date: "MARCH 2026",
-        tags: ["CORE", "MATHEMATICS"],
-        abstract: "This paper formulates the Surprisal Protocol, establishing a formal link between cryptographic verification and agentic economic incentives."
-    },
-    {
-        id: "SR-2026-004",
-        slug: "essays/the-power-of-surprisal-zh",
-        title: "惊变理论：可验证智能的经济基石 (Chinese Edition)",
-        authors: ["J. Wu"],
-        date: "MARCH 2026",
-        tags: ["PHILOSOPHY", "ZH"],
-        abstract: "The foundational essay defining the long-term impact of an autonomous agent economy, translated for the global research community."
-    }
-];
+interface ResearchPaper {
+    id: string;
+    slug: string;
+    title: string;
+    authors: string[];
+    date: string;
+    tags: string[];
+    abstract: string;
+}
 
-export default function ResearchArchive({ lang }: { lang: "en" | "zh" }) {
+interface ResearchArchiveProps {
+    lang: string;
+    dict: {
+        title: string;
+        count: string;
+        papers: ResearchPaper[];
+        contribute_title: string;
+        contribute_desc: string;
+        contribute_btn: string;
+    };
+}
+
+export default function ResearchArchive({ lang, dict }: ResearchArchiveProps) {
+    const papers = dict.papers;
     return (
         <section className="w-full max-w-4xl mx-auto py-24 px-8">
             <div className="flex items-center justify-between mb-16 border-b border-zinc-100 pb-8">
-                <h2 className="text-2xl font-serif text-zinc-800">Research & Publications</h2>
-                <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">{PAPERS.length} Documents Found</span>
+                <h2 className="text-2xl font-serif text-zinc-800">{dict.title}</h2>
+                <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">{papers.length} {dict.count}</span>
             </div>
 
             <div className="space-y-16">
-                {PAPERS.map((paper) => (
+                {papers.map((paper) => (
                     <Link
                         key={paper.id}
-                        href={`/research/${paper.slug}`}
+                        href={`/${lang}/research/${paper.slug}`}
                         className="group cursor-pointer block"
                     >
                         <div className="flex flex-col md:flex-row gap-8">
@@ -79,12 +81,12 @@ export default function ResearchArchive({ lang }: { lang: "en" | "zh" }) {
             </div>
 
             <div className="mt-24 p-12 bg-zinc-50 border border-zinc-100 text-center space-y-4">
-                <h3 className="font-serif text-xl">Contributing to the Archive</h3>
+                <h3 className="font-serif text-xl">{dict.contribute_title}</h3>
                 <p className="text-sm text-zinc-500 max-w-md mx-auto">
-                    Symbol Science is an open-research institution. We welcome formal proofs and papers related to the agent economy.
+                    {dict.contribute_desc}
                 </p>
                 <button className="text-xs font-mono font-bold uppercase tracking-widest pt-4 hover:underline">
-                    Submission Guidelines →
+                    {dict.contribute_btn}
                 </button>
             </div>
         </section>
