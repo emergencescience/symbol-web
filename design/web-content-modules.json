@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "project": "Moon Factory",
+    "description": "Web content modules for symbol.science/moon page update",
+    "language": "bilingual (en + zh)",
+    "date": "2026-06-15"
+  },
+  "existing_sections_update": [
+    {
+      "id": "hero",
+      "title_en": "The Seed Factory",
+      "title_zh": "种子工厂",
+      "content_en": "A factory that builds itself. An industrial civilization that starts with 10 tons and grows exponentially. We send not a factory, but a seed — the smallest set of tools that can bootstrap an industrial world on another planet.",
+      "content_zh": "一座自我建造的工厂。一个从 10 吨开始、指数增长的工业文明。我们发送的不是工厂，而是一颗种子——最小的工具集，足以在另一个星球上点燃工业化的火种。",
+      "suggested_visual": "3D interactive model of the seed package — deployable solar panels, laser receiver, rover, reactor — built with Three.js, explorable in browser"
+    },
+    {
+      "id": "constraint",
+      "title_en": "You Cannot Ship a Factory to the Moon",
+      "title_zh": "你不能把工厂运到月球",
+      "content_en": "Earth-Moon transport costs ~$1M per kilogram. A blast furnace or rolling mill is out of the question. The old model — ship the factory, then run it — breaks at the first Lagrange point. We need a new paradigm.",
+      "content_zh": "地月运输成本约每公斤一百万美元。高炉、轧钢机、化工厂——别想了。传统模型——造好工厂然后运过去——在第一个拉格朗日点就崩溃了。我们需要新的范式。",
+      "suggested_visual": "Comparison infographic: traditional factory (giant rocket, tiny payload) vs seed (small package, exponential growth)"
+    },
+    {
+      "id": "constraint_stats",
+      "content_en": {
+        "stat_1": "~$1M+",
+        "stat_1_label": "per kg to lunar surface",
+        "stat_2": "3 days",
+        "stat_2_label": "minimum transit window",
+        "stat_3": "1/6 g",
+        "stat_3_label": "no atmosphere, no water"
+      },
+      "content_zh": {
+        "stat_1": "~$1M+",
+        "stat_1_label": "每公斤到月面的成本",
+        "stat_2": "3天",
+        "stat_2_label": "最短运输窗口",
+        "stat_3": "1/6 g",
+        "stat_3_label": "无大气，无液态水"
+      }
+    },
+    {
+      "id": "the_seed",
+      "title_en": "The Seed",
+      "title_zh": "种子",
+      "content_en": "We send not a factory, but a seed: 10 tons of the minimum essential equipment — precision instruments, chip coatings, a laser receiver. Everything else must be grown from lunar soil, powered by laser energy beamed from Earth. The seed is the smallest set of tools that can bootstrap an industrial civilization on another world.\n\n> Think of it as a compiler that compiles itself — the industrial equivalent of a self-hosting language.\n\nThis concept is not science fiction. NASA has studied self-replicating lunar factories since 1980 (Freitas & Gilbreath, NASA CP-2255). The FFC Cambridge process — molten salt electrolysis of lunar regolith — was demonstrated in 2000. Alex Ellery (Carleton University) proved the full chain from molten salt to metal powder to 3D printing to self-replication (2016-2025).",
+      "content_zh": "我们发送的不是工厂，而是一颗种子：10 吨的最少必要设备——精密仪器、芯片涂层、激光接收器。其余的一切都必须从月壤中生长出来，由地球发射的激光能量驱动。种子是能够在一个新世界上点燃工业文明的最小的工具集。\n\n> 就像自举编译器——工业界的 self-hosting 语言。\n\n这不是科幻。NASA 自 1980 年就开始研究自复制月球工厂（Freitas & Gilbreath, NASA CP-2255）。FFC Cambridge 工艺——熔盐电解月壤——在 2000 年就被验证。Alex Ellery（卡尔顿大学）在 2016-2025 年间证明了从熔盐到金属粉末到 3D 打印到自复制的完整链条。",
+      "suggested_visual": "Animated diagram showing seed to growth to factory transition, with scientific citations overlaid"
+    },
+    {
+      "id": "how_it_grows",
+      "title_en": "How It Grows",
+      "title_zh": "如何生长",
+      "content_en": {
+        "step_1_title": "1. Land",
+        "step_1_desc": "The seed package lands on the lunar surface. Solar panels unfold. The laser receiver aligns with Earth. Weight: ~10 tons.",
+        "step_2_title": "2. Extract",
+        "step_2_desc": "Autonomous rovers harvest lunar regolith. The FFC Cambridge molten salt reactor extracts iron, aluminum, silicon, titanium, and oxygen from the same feedstock.",
+        "step_3_title": "3. Build",
+        "step_3_desc": "Using ionic liquid electrodeposition and solar sintering — not molten metal — the first structural components grow from solution at ambient lunar temperatures.",
+        "step_4_title": "4. Replicate",
+        "step_4_desc": "The factory builds more factory. Each generation doubles capacity. Generation 2: 50 tons. Generation 10: industrial scale. No new parts from Earth needed."
+      },
+      "content_zh": {
+        "step_1_title": "一、着陆",
+        "step_1_desc": "种子包裹抵达月面。太阳能板展开。激光接收器对准地球。重量：约 10 吨。",
+        "step_2_title": "二、提取",
+        "step_2_desc": "自主漫游车采集月壤。FFC Cambridge 熔盐反应器从中提取铁、铝、硅、钛和氧气。",
+        "step_3_title": "三、建造",
+        "step_3_desc": "使用离子液体电沉积和太阳能烧结——而非熔化的金属——第一批结构件在月面温度下从溶液中结晶生长。",
+        "step_4_title": "四、复制",
+        "step_4_desc": "工厂建造更多的工厂。每一代产能翻倍。第二代：50 吨。第十代：工业规模。不再需要从地球运送新零件。"
+      },
+      "suggested_visual": "4-panel animated sequence showing each step with a visual growth chart showing exponential curve"
+    },
+    {
+      "id": "chemistry",
+      "title_en": "New Chemistry for a New World",
+      "title_zh": "为新世界创造新化学",
+      "content_en": "Traditional metallurgy — melting, casting, forging — is absurd on the Moon. It requires immense heat, heavy equipment, and atmosphere. Instead, we are developing non-water solvents engineered for the lunar environment.\n\nFour paths, validated by 2024-2026 research:\n1. Molten Salt Electrolysis (FFC Cambridge) — Direct reduction at ~900C. Produces metals + oxygen. TRL 5-6.\n2. Ionic Liquids — Room-temperature molten salts, zero vapor pressure, vacuum stable. -100C to +400C range.\n3. Vapor Deposition (CVD/PVD) — Zero-solvent. NASA laser-directed CVD, self-driving PVD with Bayesian ML (Nature, 2025).\n4. Solar Sintering — Concentrated sunlight, no solvents at all.\n\nThe factory grows like a crystal, not like a blast furnace.",
+      "content_zh": "传统冶金——熔炼、铸造、锻造——在月球上是荒谬的。它们需要极高的热量、重型设备、大气。取而代之的是我们为月面环境工程化设计的非水溶剂化学。\n\n四条经过 2024-2026 研究验证的路径：\n1. 熔盐电解（FFC Cambridge）— 在 ~900C 下直接电解还原月壤。同时产出金属+氧气。TRL 5-6。\n2. 离子液体 — 室温熔盐，零蒸气压，真空稳定。工作温度 -100C 到 +400C。\n3. 气相沉积（CVD/PVD）— 零溶剂制造。NASA 激光定向 CVD；自驱动物理气象沉积 + 贝叶斯机器学习（Nature, 2025）。\n4. 太阳能烧结 — 聚焦阳光，完全不需要溶剂。\n\n工厂像晶体一样生长，而不是像高炉一样燃烧。",
+      "suggested_visual": "Lab photo of FFC Cambridge process running on lunar simulant + chemical process diagram"
+    },
+    {
+      "id": "tech_moat",
+      "title_en": "Our Technology Moat",
+      "title_zh": "技术护城河",
+      "content_en": "The core question: is there a self-replicating manufacturing paradigm that works without water, without Earth-like temperature, and without atmosphere?\n\nThe answer is yes, and the key is molten salt electrochemistry. Alex Ellery has shown that the FFC Cambridge process can reduce lunar regolith directly, producing metals and oxygen. The metals feed additive manufacturing. Additive manufacturing builds more FFC reactors. This is the seed of self-replication.\n\nKey gap: No one has yet demonstrated the complete non-water self-replication cycle in an integrated system. That is what we aim to do.",
+      "content_zh": "核心问题：是否存在一种不依赖水、不依赖地球温度、不依赖大气的自复制制造范式？\n\n答案是肯定的，关键是熔盐电化学。Alex Ellery 已经证明 FFC Cambridge 工艺可以在熔融 CaCl2 中直接还原月壤，同时产出金属和氧气。金属被送进增材制造设备。增材制造设备建造更多的 FFC 反应器。这就是自复制的种子。\n\n关键空白：还没有人验证过完整的非水自复制循环。这正是我们要做的事情。",
+      "suggested_visual": "Closed-loop diagram: FFC reactor -> metal powder -> 3D printer -> new FFC reactor"
+    },
+    {
+      "id": "desert_testbed",
+      "title_en": "The Desert Testbed",
+      "title_zh": "沙漠验证",
+      "content_en": "Before the Moon, we test on Earth. The desert is the closest analog to the lunar surface.\n\nAustralia's Pilbara already hosts the world's most advanced autonomous mining: Rio Tinto's 70+ autonomous haul trucks, remote-controlled from 1,500 km away. Fortescue operates fully autonomous fleets powered by solar + hydrogen.\n\nThree-step validation: Mini PoC (2027, ~$0.6M), Pilot Factory (2029, ~$18M), Full Factory (2031, ~$120M).",
+      "content_zh": "在去月球之前，我们在地球上验证。沙漠是月面最接近的类比环境。\n\n澳大利亚 Pilbara 已经拥有全球最先进的自主矿山：Rio Tinto 的 70 多辆自动运输卡车，从 1500 km 外的珀斯远程控制。Fortescue 运营着全自动车队。\n\n三步验证：概念验证（2027年，约 $0.6M）、中试工厂（2029年，约 $18M）、全规模工厂（2031年，约 $120M）。",
+      "suggested_visual": "Real photos of Pilbara autonomous mining operations (purchase license from Getty/Terra Mater)"
+    },
+    {
+      "id": "timeline",
+      "title_en": "A 4-Generation Horizon",
+      "title_zh": "四代人的征程",
+      "content_en": "Phase 0 (2026-2028): Desert validation. Phase 1 (2028-2032): Autonomous desert factory. Phase 2 (2032-2040): Lunar seed deployment. Phase 3 (2040-2060): Self-expanding moon factory. Phase 4 (2060-2100): Mass driver + Helium-3. Phase 5 (2100-2226): Autonomous lunar industrial center, supporting Mars.",
+      "content_zh": "Phase 0（2026-2028）：沙漠验证。Phase 1（2028-2032）：自主沙漠工厂。Phase 2（2032-2040）：月面种子部署。Phase 3（2040-2060）：自扩展月球工厂。Phase 4（2060-2100）：质量驱动器+氦-3。Phase 5（2100-2226）：自冶月面工业中心。",
+      "suggested_visual": "Interactive horizontal timeline with expandable detail cards"
+    },
+    {
+      "id": "cta",
+      "title_en": "This Begins With a Question",
+      "title_zh": "这一切从一个问题开始",
+      "content_en": "What is the smallest set of tools that can build everything else?\n\nIf you find that question interesting — as a scientist, an engineer, an investor, or a dreamer — we want to hear from you.",
+      "content_zh": "什么是最小的工具集，能够建造一切其他东西？\n\n如果你觉得这个问题有趣——无论你是科学家、工程师、投资人还是梦想家——我们想听到你的声音。",
+      "suggested_visual": "Simple text-based CTA with email link, consistent with current dark/amber design"
+    }
+  ],
+  "new_sections_proposed": [
+    {
+      "id": "why_not_just_rockets",
+      "title_en": "Why Not Just Ship Everything?",
+      "title_zh": "为什么不直接运过去？",
+      "content_en": "A single blast furnace weighs 100+ tons. A steel rolling mill weighs 1,000+ tons. A semiconductor fab weighs 10,000+ tons. Even with Starship at $100/kg, shipping Earth's full industrial base to the Moon would cost trillions.\n\nBut more importantly: a self-replicating factory works on the Moon, on Mars, in the asteroid belt. A shipped factory works only on the Moon. The seed scales to the entire solar system.",
+      "content_zh": "一个高炉重 100+ 吨。一台轧钢机重 1,000+ 吨。一座半导体厂重 10,000+ 吨。即使 Starship 将发射成本降到 $100/kg，把地球完整工业基础运到月球也需要数万亿美元。\n\n但更重要的是：自复制工厂可以在月球上生长、在火星上生长、在小行星带上生长——而运过去的工厂只能在月球工作。",
+      "suggested_visual": "Side-by-side: stack of rockets vs a small seed + exponential curve"
+    },
+    {
+      "id": "civilization_type1",
+      "title_en": "From Type 0 to Type I Civilization",
+      "title_zh": "从 0 型文明到 I 型文明",
+      "content_en": "Type 0: Uses limited planetary resources. Type I: Harnesses the full energy of a planet. The Seed Factory is the first step from Type 0 to Type I. Not just about the Moon — about becoming a species that no longer lives in a single fragile cradle.\n\nThis is not human conquest of space. This is intelligence, with agency, taking its first upright steps beyond the planetary womb.",
+      "content_zh": "0 型：使用有限行星资源。I 型：完全利用行星级能源。种子工厂是从 0 型到 I 型的第一步。不仅仅关乎登上月球——而是关于一个物种不再生活在一个脆弱的摇篮里。\n\n这不是人类征服太空。这是具有能动性的智能，在行星子宫之外，第一次直立行走。",
+      "suggested_visual": "Kardashev scale infographic — dark themed, highlighted 'YOU ARE HERE' at Type 0, arrow to Type I via Seed Factory"
+    },
+    {
+      "id": "who_is_building",
+      "title_en": "Who Is Building This?",
+      "title_zh": "谁在做这件事？",
+      "content_en": "Symbol Science is an interdisciplinary team researching self-replicating systems, extreme-environment solvent chemistry, and AI-native distributed manufacturing. We publish openly and collaborate with anyone serious about the off-world industrial future.\n\nWe need chemists, roboticists, software engineers, geologists, and people who ask the right questions. Contact moon@symbol.science.",
+      "content_zh": "Symbol Science 是一个跨学科团队，研究自复制系统、极端环境溶剂化学和 AI 原生分布式制造。我们公开发表成果，与任何认真建设地外工业未来的人合作。\n\n我们需要化学家、机器人专家、软件工程师、地质学家和会提问的人。联系 moon@symbol.science。",
+      "suggested_visual": "Simple team section or a strong 'Join Us' callout"
+    }
+  ],
+  "design_philosophy": {
+    "operating_system": "The seed factory's software follows OS design: a microkernel (protocol layer) with manufacturing modules running as user-space processes. No central scheduler — modules negotiate resources via consensus.",
+    "self_organizing_network": "Each factory module is an independent AI agent. They coordinate via Emergence Science's Surprise Protocol — an information-theoretic metric that signals unexpected patterns — enabling self-organization without central control.",
+    "financial_engineering": "Multi-round investment with phased exits. Phase 0 funded by AI compute revenue. Series A by mining licensing. Series B by ISRU contracts. IPO when lunar manufacturing is real.",
+    "intelligent_manufacturing": "Digital twin + reinforcement learning + predictive maintenance. Every machine has a simulation twin running ahead of real time.",
+    "ai_native": "AI-native from day one — not a manual factory retrofitted with AI. Sensors, actuators, control loops, and decisions built for autonomous operation."
+  }
+}

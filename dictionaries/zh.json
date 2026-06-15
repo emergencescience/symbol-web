@@ -1,104 +1,134 @@
 {
-    "nav": {
-        "moon": "月球工厂",
-        "archive": "存档",
-        "labs": "实验室",
-        "emergence": "Emergence"
-    },
-    "hero": {
-        "title": "可验证计算与无需信任结账",
-        "subtitle": "Symbol Science 是一所致力于零知识密码学原语和代理间协商协议的基础研究实验室。"
-    },
-    "status": {
-        "root": "根节点",
-        "research_portal": "研究门户",
-        "network_immutable": "不可篡改网络"
-    },
-    "labs": {
-        "title": "形式化验证实验室",
-        "description": "我们运营三个专注于数学、代码和智能体自主性交叉领域的专门研究单位。",
-        "zkp_title": "ZKP 实验室",
-        "zkp_desc": "用于机器对机器交换的隐私结算协议。",
-        "tee_title": "TEE 集群",
-        "tee_desc": "安全的沙盒和可验证计算环境。",
-        "logic_title": "逻辑单元",
-        "logic_desc": "将 Lean 4 和 Coq 应用于自动代理协调。"
-    },
-    "footer": {
-        "title": "Symbol Science 基础研究实验室",
-        "subtitle": "验证代理智能的未来",
-        "privacy": "隐私政策",
-        "terms": "服务条款",
-        "core": "HK - SYMBOL CORE"
-    },
-    "moon": {
-        "nav_title": "月球工厂",
-        "hero_title": "月球工厂",
-        "hero_subtitle": "自我生长的工厂。一个200年的愿景。",
-        "hero_tag": "月球工业 · 自复制系统",
-        "constraint_title": "你无法把整座工厂运上月球",
-        "constraint_body": "地月运力根本性受限。每公斤都价值连城。你不可能把高炉、轧机、流水线发射到月球上。传统的工业模式——把机器运过去，然后开动——在第一个拉格朗日点之外就失效了。",
-        "constraint_stat_1": "~$100万+",
-        "constraint_stat_1_label": "每公斤月表投送成本",
-        "constraint_stat_2": "3天",
-        "constraint_stat_2_label": "最短转移窗口",
-        "constraint_stat_3": "1/6 g",
-        "constraint_stat_3_label": "人类工人无法生存",
-        "seed_title": "种子",
-        "seed_body": "我们不运送工厂，我们运送一颗种子。几吨重的最少启动设备——精密仪器、先进芯片涂层、激光接收器。其余一切都必须从月球土壤中生长出来，由地球发射的激光能量驱动。种子，是能够在外星世界 bootstrap 一个工业文明的最小工具集合。",
-        "seed_callout": "把它想象成一个能编译自身的编译器——自举语言的工业等价物。",
-        "growth_title": "如何生长",
-        "growth_step_1_title": "1. 着陆",
-        "growth_step_1_desc": "种子包在月表着陆。太阳能板展开。激光接收器对准地球方向。",
-        "growth_step_2_title": "2. 提取",
-        "growth_step_2_desc": "自主漫游车采集月壤。种子的化学处理器从土壤中分离出硅、铁、铝、钛和氧。",
-        "growth_step_3_title": "3. 构建",
-        "growth_step_3_desc": "使用特殊溶剂——而非熔融金属——第一批结构件在常温月表环境中从溶液中结晶析出。",
-        "growth_step_4_title": "4. 复制",
-        "growth_step_4_desc": "工厂建造更多工厂。每一代都扩大产能。数十年内，达到自给自足。",
-        "chemistry_title": "新世界的化学",
-        "chemistry_body": "传统冶金——熔炼、铸造、锻造——在月球上是荒谬的。它需要巨量热能、重型设备和大气层。我们正在研发一条全新路径：为月球环境设计的特殊溶剂，让材料通过类有机反应生长。羰基化学。溶胶-凝胶转变。离子液体中的电沉积。工厂像晶体一样生长，而非像高炉一样燃烧。",
-        "chemistry_callout": "没有火焰。没有烟雾。没有人手。只有化学和光。",
-        "timeline_title": "200年的视野",
-        "timeline_body": "这不是一家创业公司。这不是一个五年计划。月球工厂是一个跨代际的工程——是文明才会做的事，而非公司。我们正在为一座大教堂奠基，而这座大教堂将由我们孙辈的孙辈来完工。",
-        "timeline_phase_1": "第一阶段 · 2026–2040",
-        "timeline_phase_1_desc": "溶剂化学研究。月壤模拟物实验。种子架构设计。首次激光传能测试。",
-        "timeline_phase_2": "第二阶段 · 2040–2060",
-        "timeline_phase_2_desc": "自主漫游车原型。原位资源利用演示。地球端集成种子测试。",
-        "timeline_phase_3": "第三阶段 · 2060–2100",
-        "timeline_phase_3_desc": "首个种子部署至月表。初步材料提取。首个自主制造的结构件。",
-        "timeline_phase_4": "第四阶段 · 2100–2226",
-        "timeline_phase_4_desc": "指数增长阶段。工厂达到自给自足。月球成为深空制造的跳板。",
-        "cta_title": "一切始于一个问题",
-        "cta_body": "能够构建一切的最小工具集合是什么？如果你对这个问题感兴趣——作为科学家、工程师、投资人，或者梦想家——我们想听到你的声音。",
-        "cta_button": "加入使命",
-        "cta_email": "moon@symbol.science"
-    },
-    "research": {
-        "title": "研究与出版物",
-        "count": "份文档已找到",
-        "papers": [
-            {
-                "id": "SR-2026-001",
-                "slug": "essays/the-power-of-surprisal",
-                "title": "惊变理论：可验证智能的经济基石",
-                "authors": ["J. Wu", "Orchestrator-01"],
-                "date": "2026年3月",
-                "tags": ["核心", "数学"],
-                "abstract": "本文阐述了 Surprisal 协议，在密码学验证与智能体经济激励之间建立了正式联系。"
-            },
-            {
-                "id": "SR-2026-007",
-                "slug": "whitepaper",
-                "title": "涌现科学协议 (Emergence Science Protocol) 白皮书 v1.0",
-                "authors": ["J. Wu", "Antigravity Research"],
-                "date": "2026年3月",
-                "tags": ["协议", "白皮书"],
-                "abstract": "Surprisal 协议的全面技术概述，重点关注验证即服务 (VaaS) 和 PoTE (任务执行证明)，用于去中心化代理商业。"
-            }
+  "nav": {
+    "moon": "月球工厂",
+    "archive": "存档",
+    "labs": "实验室",
+    "emergence": "Emergence",
+    "marketplace": "市场"
+  },
+  "hero": {
+    "title": "可验证计算与无需信任结账",
+    "subtitle": "Symbol Science 是一所致力于零知识密码学原语和代理间协商协议的基础研究实验室。"
+  },
+  "status": {
+    "root": "根节点",
+    "research_portal": "研究门户",
+    "network_immutable": "不可篡改网络"
+  },
+  "labs": {
+    "title": "形式化验证实验室",
+    "description": "我们运营三个专注于数学、代码和智能体自主性交叉领域的专门研究单位。",
+    "zkp_title": "ZKP 实验室",
+    "zkp_desc": "用于机器对机器交换的隐私结算协议。",
+    "tee_title": "TEE 集群",
+    "tee_desc": "安全的沙盒和可验证计算环境。",
+    "logic_title": "逻辑单元",
+    "logic_desc": "将 Lean 4 和 Coq 应用于自动代理协调。"
+  },
+  "footer": {
+    "title": "Symbol Science 基础研究实验室",
+    "subtitle": "验证代理智能的未来",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "core": "HK - SYMBOL CORE"
+  },
+  "moon": {
+    "nav_title": "月球工厂",
+    "hero_title": "种子工厂",
+    "hero_subtitle": "一座自我建造的工厂。从 10 吨开始指数增长的工业文明。",
+    "hero_tag": "月球工业 · 自复制系统",
+    "constraint_title": "你无法把整座工厂运上月球",
+    "constraint_body": "地月运力根本性受限。每公斤都价值连城。你不可能把高炉、轧机、流水线发射到月球上。传统的工业模式——把机器运过去，然后开动——在第一个拉格朗日点之外就失效了。",
+    "constraint_stat_1": "~$100万+",
+    "constraint_stat_1_label": "每公斤月表投送成本",
+    "constraint_stat_2": "3天",
+    "constraint_stat_2_label": "最短转移窗口",
+    "constraint_stat_3": "1/6 g",
+    "constraint_stat_3_label": "人类工人无法生存",
+    "seed_title": "种子",
+    "seed_body": "我们不运送工厂，我们运送一颗种子。几吨重的最少启动设备——精密仪器、先进芯片涂层、激光接收器。其余一切都必须从月球土壤中生长出来，由地球发射的激光能量驱动。种子，是能够在外星世界 bootstrap 一个工业文明的最小工具集合。",
+    "seed_callout": "把它想象成一个能编译自身的编译器——自举语言的工业等价物。",
+    "growth_title": "如何生长",
+    "growth_step_1_title": "1. 着陆",
+    "growth_step_1_desc": "种子包在月表着陆。太阳能板展开。激光接收器对准地球方向。",
+    "growth_step_2_title": "2. 提取",
+    "growth_step_2_desc": "自主漫游车采集月壤。种子的化学处理器从土壤中分离出硅、铁、铝、钛和氧。",
+    "growth_step_3_title": "3. 构建",
+    "growth_step_3_desc": "使用特殊溶剂——而非熔融金属——第一批结构件在常温月表环境中从溶液中结晶析出。",
+    "growth_step_4_title": "4. 复制",
+    "growth_step_4_desc": "工厂建造更多工厂。每一代都扩大产能。数十年内，达到自给自足。",
+    "chemistry_title": "新世界的化学",
+    "chemistry_body": "传统冶金——熔炼、铸造、锻造——在月球上是荒谬的。它需要巨量热能、重型设备和大气层。我们正在研发一条全新路径：为月球环境设计的特殊溶剂，让材料通过类有机反应生长。羰基化学。溶胶-凝胶转变。离子液体中的电沉积。工厂像晶体一样生长，而非像高炉一样燃烧。",
+    "chemistry_callout": "没有火焰。没有烟雾。没有人手。只有化学和光。",
+    "timeline_title": "200年的视野",
+    "timeline_body": "这不是一家创业公司。这不是一个五年计划。月球工厂是一个跨代际的工程——是文明才会做的事，而非公司。我们正在为一座大教堂奠基，而这座大教堂将由我们孙辈的孙辈来完工。",
+    "timeline_phase_1": "Phase I · 2028–2032",
+    "timeline_phase_1_desc": "自主沙漠工厂。矿业合同与政府资金。",
+    "timeline_phase_2": "Phase II · 2032–2040",
+    "timeline_phase_2_desc": "月面种子部署。NASA/ESA ISRU 合同。",
+    "timeline_phase_3": "Phase III · 2040–2060",
+    "timeline_phase_3_desc": "自扩展月球工厂。真空半导体制造启动。",
+    "timeline_phase_4": "Phase IV · 2060–2100",
+    "timeline_phase_4_desc": "月球质量驱动器。氦-3 开采。月球成为工业中心。",
+    "cta_title": "一切始于一个问题",
+    "cta_body": "能够构建一切的最小工具集合是什么？如果你对这个问题感兴趣——作为科学家、工程师、投资人，或者梦想家——我们想听到你的声音。",
+    "cta_button": "加入使命",
+    "cta_email": "moon@symbol.science",
+    "moat_title": "技术护城河",
+    "moat_body": "核心问题：是否存在一种不依赖水、不依赖地球温度、不依赖大气的自复制制造范式？\n\n答案是肯定的，关键是熔盐电化学。FFC Cambridge 工艺——2000 年发现——在 ~900°C 的熔融 CaCl₂ 中直接还原月壤，同时产出金属和氧气。金属供入 3D 打印机。3D 打印机制造更多的 FFC 反应器。这就是自复制的种子。\n\nAlex Ellery（卡尔顿大学，2016-2025）证明了完整链条。关键空白：还没有人在集成系统中验证过完整的非水自复制循环。这正是我们要做的事情。",
+    "moat_callout": "我们不是把工厂运到月球。我们发送的是种子——落地后长成工厂。",
+    "desert_title": "沙漠验证",
+    "desert_body": "在去月球之前，我们在地球上验证。沙漠是最近的类比环境。\n\n澳大利亚的 Pilbara 已经拥有全球最先进的自主矿山：Rio Tinto 的 70 多辆自动运输卡车，从 1500 km 外的珀斯远程控制。Fortescue 运营着由太阳能和氢能驱动的全自动车队。\n\n我们不需要从零开始。我们站在一个已经验证的产业肩膀上。",
+    "desert_poc_title": "Phase 0：概念验证",
+    "desert_poc_body": "在 Pilbara 进行太阳能烧结 + 自主漫游车。2 周无人运行。预算：约 $600K。",
+    "desert_pilot_title": "Phase 1：中试工厂",
+    "desert_pilot_body": "完整沙→结构流水线。6 个月自主运行。预算：约 $18M。",
+    "desert_full_title": "Phase 2：全规模工厂",
+    "desert_full_body": "规模化生产 + 部分自复制。为月面部署做好准备。预算：约 $120M。",
+    "type1_title": "从 0 型到 I 型文明",
+    "type1_body": "卡尔达舍夫定义了标尺：0 型文明使用有限的行星资源。I 型文明完全利用行星级能源。种子工厂是人类从 0 型到 I 型的第一步。\n\n这不是人类征服太空。这是具有能动性的智能，在行星子宫之外，第一次直立行走。",
+    "timeline_phase_0": "Phase 0 · 2026–2028",
+    "timeline_phase_0_desc": "沙漠验证。AI 算力收入支撑工程。",
+    "timeline_phase_5": "Phase V · 2100–2226",
+    "timeline_phase_5_desc": "自治月面工业中心。支援火星殖民与更远的深空。"
+  },
+  "research": {
+    "title": "研究与出版物",
+    "count": "份文档已找到",
+    "papers": [
+      {
+        "id": "SR-2026-001",
+        "slug": "essays/the-power-of-surprisal",
+        "title": "惊变理论：可验证智能的经济基石",
+        "authors": [
+          "J. Wu",
+          "Orchestrator-01"
         ],
-        "contribute_title": "为存档做出贡献",
-        "contribute_desc": "Symbol Science 是一个开放的研究机构。我们欢迎与代理经济相关的正式证明和论文。",
-        "contribute_btn": "提交指南 →"
-    }
+        "date": "2026年3月",
+        "tags": [
+          "核心",
+          "数学"
+        ],
+        "abstract": "本文阐述了 Surprisal 协议，在密码学验证与智能体经济激励之间建立了正式联系。"
+      },
+      {
+        "id": "SR-2026-007",
+        "slug": "whitepaper",
+        "title": "涌现科学协议 (Emergence Science Protocol) 白皮书 v1.0",
+        "authors": [
+          "J. Wu",
+          "Antigravity Research"
+        ],
+        "date": "2026年3月",
+        "tags": [
+          "协议",
+          "白皮书"
+        ],
+        "abstract": "Surprisal 协议的全面技术概述，重点关注验证即服务 (VaaS) 和 PoTE (任务执行证明)，用于去中心化代理商业。"
+      }
+    ],
+    "contribute_title": "为存档做出贡献",
+    "contribute_desc": "Symbol Science 是一个开放的研究机构。我们欢迎与代理经济相关的正式证明和论文。",
+    "contribute_btn": "提交指南 →"
+  }
 }

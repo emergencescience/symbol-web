@@ -262,6 +262,10 @@ export default function MoonFactoryHero({ dict }: { dict: any }) {
         {/* CTA */}
         <a
           href="#constraint"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("constraint")?.scrollIntoView({ behavior: "smooth" });
+          }}
           className="group flex items-center gap-3 text-sm font-mono uppercase tracking-widest text-zinc-400 hover:text-white transition-all duration-500"
         >
           <span className="w-8 h-px bg-zinc-600 group-hover:bg-amber-400/60 group-hover:w-12 transition-all duration-500" />
