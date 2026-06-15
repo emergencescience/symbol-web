@@ -90,7 +90,17 @@
     "timeline_phase_0": "Phase · 2026–2028",
     "timeline_phase_0_desc": "Desert validation. AI computing revenue funds the work.",
     "timeline_phase_5": "Phase V · 2100–2226",
-    "timeline_phase_5_desc": "Autonomous lunar industrial center supporting Mars colonization and beyond."
+    "timeline_phase_5_desc": "Autonomous lunar industrial center supporting Mars colonization and beyond.",
+    "tech_page_title": "The Technology",
+    "tech_page_desc": "Deep dive into non-water solvent chemistry, FFC Cambridge process, and self-replication research",
+    "roadmap_page_title": "The Roadmap",
+    "roadmap_page_desc": "Full timeline from desert validation to interstellar civilization",
+    "story_page_title": "The Girl Who Fell From the Moon",
+    "story_page_desc": "A fairy tale for everyone who has ever looked up at the Moon and wondered",
+    "subnav_technology": "Technology",
+    "subnav_roadmap": "Roadmap",
+    "subnav_story": "Story",
+    "subnav_whitepaper": "Whitepaper"
   },
   "research": {
     "title": "Research & Publications",

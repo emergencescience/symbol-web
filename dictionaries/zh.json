@@ -90,7 +90,17 @@
     "timeline_phase_0": "Phase 0 · 2026–2028",
     "timeline_phase_0_desc": "沙漠验证。AI 算力收入支撑工程。",
     "timeline_phase_5": "Phase V · 2100–2226",
-    "timeline_phase_5_desc": "自治月面工业中心。支援火星殖民与更远的深空。"
+    "timeline_phase_5_desc": "自治月面工业中心。支援火星殖民与更远的深空。",
+    "tech_page_title": "技术详解",
+    "tech_page_desc": "非水溶剂化学、FFC Cambridge 工艺与自复制研究的深度探讨",
+    "roadmap_page_title": "路线图",
+    "roadmap_page_desc": "从沙漠验证到星际文明的完整时间线",
+    "story_page_title": "从月亮上坠落的女孩",
+    "story_page_desc": "献给每一个曾经仰望月亮并幻想过那里有人在下方的人",
+    "subnav_technology": "技术",
+    "subnav_roadmap": "路线图",
+    "subnav_story": "故事",
+    "subnav_whitepaper": "白皮书"
   },
   "research": {
     "title": "研究与出版物",

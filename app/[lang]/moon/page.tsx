@@ -57,6 +57,56 @@ export default async function MoonPage({
       {/* Hero */}
       <MoonFactoryHero dict={t} />
 
+      {/* Subpage Navigation */}
+      <section className="py-16 md:py-24 px-8 md:px-12 border-b border-zinc-900">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              {
+                href: `/${lang}/moon/technology`,
+                icon: "⬡",
+                title_en: "Technology",
+                title_zh: "技术详解",
+                desc_en: "Deep dive into non-water solvent chemistry and self-replication research",
+                desc_zh: "非水溶剂化学与自复制研究的深度探讨",
+              },
+              {
+                href: `/${lang}/moon/roadmap`,
+                icon: "⟡",
+                title_en: "Roadmap",
+                title_zh: "路线图",
+                desc_en: "100-year plan from desert testbed to Type I civilization",
+                desc_zh: "从沙漠验证到 I 型文明的百年计划",
+              },
+              {
+                href: `/${lang}/moon/story`,
+                icon: "☾",
+                title_en: "Story",
+                title_zh: "童话",
+                desc_en: "A fairy tale from the Moon — for all dreamers",
+                desc_zh: "来自月亮的童话——献给所有梦想家",
+              },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="group border border-zinc-800 bg-zinc-900/30 p-6 hover:border-amber-400/20 transition-all duration-500 cursor-pointer"
+              >
+                <div className="text-2xl text-amber-400/40 mb-3 group-hover:text-amber-300 transition-colors">
+                  {item.icon}
+                </div>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-300 mb-2 group-hover:text-white transition-colors">
+                  {lang === "zh" ? item.title_zh : item.title_en}
+                </h3>
+                <p className="text-xs text-zinc-500 leading-relaxed">
+                  {lang === "zh" ? item.desc_zh : item.desc_en}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Section 1: The Constraint */}
       <ScrollReveal>
         <section
