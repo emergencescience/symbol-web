@@ -101,14 +101,14 @@ export default async function AboutPage({
                 LEADERSHIP
               </span>
               <h2 className="text-2xl md:text-3xl font-serif text-white font-medium">
-                Founder & Technical Direction
+                {t.leadership_title}
               </h2>
             </div>
           </div>
 
           <div className="grid md:grid-cols-12 gap-8 items-stretch">
-            {/* Left Card - Bio Card */}
-            <div className="md:col-span-12 lg:col-span-8 p-8 md:p-10 rounded-2xl bg-zinc-900/40 border border-zinc-800/90 space-y-6 flex flex-col justify-between hover:border-zinc-700 transition-colors">
+            {/* Full-width Founder Bio Spotlight Card */}
+            <div className="col-span-12 p-8 md:p-10 rounded-2xl bg-zinc-900/40 border border-zinc-800/90 space-y-6 flex flex-col justify-between hover:border-zinc-700 transition-colors">
               <div className="space-y-6">
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div>
@@ -124,10 +124,10 @@ export default async function AboutPage({
                       href={t.linkedin_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3 py-1.5 rounded-lg bg-zinc-800/80 border border-zinc-700/60 text-xs font-mono text-cyan-400 hover:text-white hover:border-cyan-400/60 transition-colors flex items-center gap-1.5"
+                      className="px-3.5 py-1.5 rounded-lg bg-zinc-800/80 border border-zinc-700/60 text-xs font-mono text-cyan-400 hover:text-white hover:border-cyan-400/60 transition-colors flex items-center gap-2 font-semibold"
                     >
                       <span>LinkedIn</span>
-                      <ExternalLink size={10} />
+                      <ExternalLink size={12} />
                     </a>
                   </div>
                 </div>
@@ -147,33 +147,15 @@ export default async function AboutPage({
                   </div>
                 </div>
 
-                <p className="text-sm text-zinc-300 leading-relaxed font-normal">
+                <p className="text-sm md:text-base text-zinc-300 leading-relaxed font-normal max-w-4xl">
                   {t.founder_bio}
                 </p>
               </div>
 
-              <div className="pt-6 border-t border-zinc-800/60 flex items-center justify-between text-xs font-mono text-zinc-400">
-                <span>FOCUS: AI4S · MULTI-PHYSICS · DBTL CLOSED-LOOP</span>
+              <div className="pt-6 border-t border-zinc-800/60 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+                <span>{t.founder_focus}</span>
                 <span className="text-cyan-400 font-bold">SYMBOL SCIENCE CORE</span>
               </div>
-            </div>
-
-            {/* Right Card - Highlight Pillars */}
-            <div className="md:col-span-12 lg:col-span-4 p-8 rounded-2xl bg-gradient-to-b from-zinc-900/80 to-zinc-950/90 border border-zinc-800/90 flex flex-col justify-center space-y-6">
-              <div className="space-y-2">
-                <div className="text-xs font-mono text-zinc-400 uppercase tracking-wider">Engineering DNA</div>
-                <h4 className="text-lg font-serif text-white font-medium">Propulsion & Cloud Infrastructure</h4>
-              </div>
-              <ul className="space-y-4 text-xs text-zinc-400 font-sans leading-relaxed">
-                <li className="flex items-start gap-3">
-                  <ShieldCheck size={16} className="text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Beihang Aerospace Propulsion & McGill Mechanical:</strong> Deep expertise in CFD, fluid/thermal dynamics, structural dynamics, and physical systems.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Layers size={16} className="text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Ex-Alibaba (Lazada) & Booking.com Senior Engineer:</strong> Domain-Driven Design (DDD), workflow engine architectures, distributed microservices, and production-grade software execution.</span>
-                </li>
-              </ul>
             </div>
           </div>
         </section>
