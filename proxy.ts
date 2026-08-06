@@ -38,8 +38,8 @@ export function proxy(request: NextRequest) {
 export const config = {
     matcher: [
         // Skip all internal paths (_next)
-        // Skip all API routes (both direct /api and orchestrator proxy /games/.../api)
-        // Skip static files (anything with a dot)
-        "/((?!api|games|_next/static|_next/image|favicon.ico|icon.svg|.*\\..*).*)",
+        // Skip all API routes
+        // Skip static files
+        "/((?!api|_next/static|_next/image|favicon.ico|icon.svg|.*\\..*).*)",
     ],
 };
