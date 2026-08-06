@@ -24,6 +24,7 @@ export default async function Home({
         </div>
 
         <div className="hidden md:flex items-center gap-8 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-zinc-400">
+          <Link href={`/${lang}/about`} className="hover:text-zinc-900 transition-colors">{dict.nav.about}</Link>
           <Link href={`/${lang}/moon`} className="hover:text-zinc-900 transition-colors">{dict.nav.moon}</Link>
           <Link href={`/${lang}/research`} className="hover:text-zinc-900 transition-colors">{dict.nav.archive}</Link>
           <a href="#labs" className="hover:text-zinc-900 transition-colors">{dict.nav.labs}</a>

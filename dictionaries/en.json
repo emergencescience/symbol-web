@@ -3,6 +3,7 @@
     "moon": "Moon Factory",
     "archive": "Archive",
     "labs": "Labs",
+    "about": "About",
     "emergence": "Marketplace",
     "marketplace": "Marketplace"
   },
@@ -140,5 +141,31 @@
     "contribute_title": "Contributing to the Archive",
     "contribute_desc": "Symbol Science is an open-research institution. We welcome formal proofs and papers related to the agent economy.",
     "contribute_btn": "Submission Guidelines →"
+  },
+  "about": {
+    "nav_title": "About",
+    "hero_tag": "ABOUT SYMBOL SCIENCE · LEADERSHIP & MISSION",
+    "hero_title": "Symbolic Reasoning, Multi-Physics Simulation & Agentic Intelligence",
+    "hero_subtitle": "Symbol Science builds autonomous, zero-hallucination agentic workbenches that unify LLM reasoning, symbolic computation, and multi-physics simulation tools for engineering R&D.",
+    "mission_title": "Our Mission",
+    "mission_body": "Real-world engineering discovery cannot rely on pure LLM text generation. It requires combining symbolic mathematics, multi-physics simulation software (CFD, FEA, FreeFem++, OpenFOAM), and automated visualization tools. We build the deterministic agent orchestration layer that turns complex engineering hypotheses into verifiable R&D execution.",
+    "founder_tag": "FOUNDER & CHIEF ARCHITECT",
+    "founder_name": "Yulin (Julian) Shi · 石玉麟",
+    "founder_title": "Founder & Chief Architect",
+    "founder_buaa": "B.Eng. in Aircraft Power Engineering, Beihang University (BUAA)",
+    "founder_mcgill": "M.Eng. in Mechanical Engineering, McGill University",
+    "founder_ex": "Ex-Alibaba (Lazada) & Booking.com Senior Software Engineer",
+    "founder_bio": "Yulin (Julian) Shi holds a Master of Engineering from McGill University (specializing in structural dynamics & numerical simulation) and a Bachelor of Engineering in Aircraft Power Engineering from Beihang University (BUAA). With years of experience as a Senior Software Engineer at Alibaba (Lazada) and Booking.com—specializing in Domain-Driven Design (DDD), microservices, and workflow engine architectures—Julian leads Symbol Science in combining multi-physics simulation tools, symbolic reasoning, and LLM agentic workbenches for engineering R&D.",
+    "linkedin_url": "https://linkedin.com/in/yulin-shi-mcgill",
+    "pillars_title": "Our Core Pillars",
+    "pillar_1_title": "Symbolic & LLM Reasoning",
+    "pillar_1_desc": "Combining LLM reasoning with symbolic math and formal logic to eliminate hallucinations in engineering & scientific workflows.",
+    "pillar_2_title": "Simulation & Visualization",
+    "pillar_2_desc": "Automating multi-physics simulation (CFD/FEA), parameter sweeps, and high-dimensional plotting via code-generating agents.",
+    "pillar_3_title": "Deterministic Agent Harness",
+    "pillar_3_desc": "Testable, modular tool orchestration connecting literature extraction, simulation execution, and automated report generation.",
+    "cta_title": "Partner or Collaborate",
+    "cta_body": "Whether you are an industrial R&D lab, an engineering team, or an investor, we welcome collaboration on scientific agent workflows.",
+    "cta_email": "julian@symbolscience.com"
   }
 }

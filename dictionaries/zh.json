@@ -3,6 +3,7 @@
     "moon": "月球工厂",
     "archive": "存档",
     "labs": "实验室",
+    "about": "关于团队",
     "emergence": "Emergence",
     "marketplace": "市场"
   },
@@ -140,5 +141,31 @@
     "contribute_title": "为存档做出贡献",
     "contribute_desc": "Symbol Science 是一个开放的研究机构。我们欢迎与代理经济相关的正式证明和论文。",
     "contribute_btn": "提交指南 →"
+  },
+  "about": {
+    "nav_title": "关于",
+    "hero_tag": "ABOUT SYMBOL SCIENCE · 使命与团队",
+    "hero_title": "符号推理、多物理场仿真与智能体系统",
+    "hero_subtitle": "Symbol Science 专注于将大语言模型推理、符号计算与多物理场仿真工具深度融合，为工程与科学研发打造高确定性、零幻觉的自主 Agent 闭环工作台。",
+    "mission_title": "我们的使命",
+    "mission_body": "真实世界的工程与科研发现绝不能仅依赖大语言模型的文本生成。它必须结合符号数学、多物理场仿真软件（如 CFD、FEA、FreeFem++、OpenFOAM、RDKit）以及自动化绘图与可视化工具。我们构建高确定性的 Agent 编排与调度层，将复杂的工程假设转化为可验证、可执行的仿真研发流水线。",
+    "founder_tag": "创始人 & 首席架构师",
+    "founder_name": "石玉麟 (Yulin Shi)",
+    "founder_title": "创始人 & 首席架构师",
+    "founder_buaa": "北京航空航天大学 飞行器动力工程 学士",
+    "founder_mcgill": "加拿大麦吉尔大学 机械工程 硕士",
+    "founder_ex": "前阿里巴巴 (Lazada) & Booking.com 高级软件工程师",
+    "founder_bio": "石玉麟（Yulin / Julian Shi）拥有加拿大麦吉尔大学（McGill University）机械工程硕士学位（专注于结构动力学与数值仿真）及北京航空航天大学（BUAA）飞行器动力工程学士学位。拥有在阿里巴巴（Lazada）与 Booking.com 担任高级软件工程师的丰富经验，深耕 DDD（领域驱动设计）、分布式微服务与工作流引擎（Workflow Engine）开发。在 Symbol Science，他致力于将工程仿真软件、符号计算与大模型深度融合，架构高确定性的科研与工程自动化工作流。",
+    "linkedin_url": "https://linkedin.com/in/yulin-shi-mcgill",
+    "pillars_title": "三大核心支柱",
+    "pillar_1_title": "符号推理与 LLM 融合",
+    "pillar_1_desc": "将大语言模型与符号数学、形式化逻辑相结合，消除工程科研工作流中的“幻觉”。",
+    "pillar_2_title": "仿真与可视化工作流调度",
+    "pillar_2_desc": "通过 Agent 自动生成仿真代码（CFD/FEA）、扫频求解并自动绘制高维工程图表。",
+    "pillar_3_title": "高确定性 Agent 闭环支架",
+    "pillar_3_desc": "可测试、模块化的工具节点网络，无缝串联文献提取、仿真求解与自动化报告生成。",
+    "cta_title": "合作与交流",
+    "cta_body": "无论您是工业研发企业、工程团队还是投资伙伴，我们随时欢迎探讨科学智能体工作流落地与合作。",
+    "cta_email": "contact@symbolscience.com"
   }
 }
