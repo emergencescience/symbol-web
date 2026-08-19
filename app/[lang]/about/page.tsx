@@ -24,6 +24,9 @@ export default async function AboutPage({
         </Link>
 
         <div className="hidden md:flex items-center gap-8 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-zinc-400">
+          <Link href={`/${lang}/docs/exobrain`} className="hover:text-white transition-colors">
+            {dict.nav.exobrain}
+          </Link>
           <Link href={`/${lang}/about`} className="text-cyan-400 font-bold transition-colors">
             {t.nav_title}
           </Link>

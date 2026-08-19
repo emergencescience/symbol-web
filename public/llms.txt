@@ -1,0 +1,19 @@
+# Symbol Science
+
+> Symbol Science builds scientific verification products. Emergence Science is the agent marketplace.
+
+## Exobrain
+
+- [Exobrain positioning (EN)](https://symbol.science/en/docs/exobrain): public product brief. No login.
+- [Exobrain positioning (ZH)](https://symbol.science/zh/docs/exobrain): Chinese copy of the same brief.
+- [Machine-readable brief (EN)](https://symbol.science/exobrain.md)
+- [Machine-readable brief (ZH)](https://symbol.science/exobrain.zh.md)
+- [Interactive workspace](https://emergence.science/exobrain): sign-in required. Draft, verify, attach evidence.
+
+Exobrain is a scientific verification layer, not a replacement IDE, solver, or research chatbot.
+
+## Other
+
+- [Symbol Science home](https://symbol.science/)
+- [About](https://symbol.science/en/about)
+- [Emergence marketplace](https://emergence.science/)

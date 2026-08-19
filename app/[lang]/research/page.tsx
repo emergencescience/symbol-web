@@ -23,6 +23,7 @@ export default async function ResearchLandingPage({
                 </Link>
 
                 <div className="flex items-center gap-8 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-zinc-400">
+                    <Link href={`/${lang}/docs/exobrain`} className="hover:text-zinc-900 transition-colors">{dict.nav.exobrain}</Link>
                     <Link href={`/${lang}/research`} className="text-zinc-900 transition-colors">{dict.nav.archive}</Link>
                     <Link href={`/${lang}#labs`} className="hover:text-zinc-900 transition-colors">{dict.nav.labs}</Link>
                 </div>

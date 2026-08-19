@@ -32,6 +32,12 @@ export default async function MoonPage({
 
         <div className="hidden md:flex items-center gap-8 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-zinc-500">
           <Link
+            href={`/${lang}/docs/exobrain`}
+            className="hover:text-zinc-300 transition-colors"
+          >
+            {dict.nav.exobrain}
+          </Link>
+          <Link
             href={`/${lang}/moon`}
             className="text-amber-400/80 hover:text-amber-300 transition-colors"
           >

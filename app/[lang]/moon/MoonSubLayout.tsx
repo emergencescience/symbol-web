@@ -56,6 +56,12 @@ export default function MoonSubLayout({
               {lang === "zh" ? item.label_zh : item.label_en}
             </Link>
           ))}
+          <Link
+            href={`/${lang}/docs/exobrain`}
+            className="hover:text-zinc-300 transition-colors ml-2"
+          >
+            {dict.nav.exobrain}
+          </Link>
           <a
             href="https://emergence.science"
             className="flex items-center gap-2 hover:text-zinc-300 transition-colors ml-2"
